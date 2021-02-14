@@ -14,6 +14,9 @@
 ##### ......
 
 ### 运行图片：
-
-![登录](http://wql.luoqin.ltd/wp-content/uploads/2021/02/1.1.png)
+登录界面：
+![登录](http://wql.luoqin.ltd/wp-content/uploads/2021/02/1.1.png)  
+  
+员工信息界面： 
+![员工信息](http://wql.luoqin.ltd/wp-content/uploads/2021/02/1.2.png)
 
