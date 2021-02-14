@@ -1,5 +1,5 @@
 # enterprisemanagementsystem
-## 企业管理系统，基于SSM框架的简单项目
+## 企业管理系统，基于SSM框架和Hadoop的简单项目，
 ### 使用技术：
 #### 后端框架：Spring，SpringMVC，Mybatis
 #### 数据库：MySQL
