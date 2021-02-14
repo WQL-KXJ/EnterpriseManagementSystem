@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dao.mapper.Employee_and_FQMapper">
+
+    <resultMap id="mymap" type="com.dao.pojo.Employee_and_BMs">
+        <id property="id" column="id"></id>
+        <result column="name" property="name"></result>
+        <result column="age" property="age"></result>
+        <result column="gender" property="gender"></result>
+        <result column="phone" property="phone"></result>
+        <result column="addr" property="addr"></result>
+        <association property="bms" javaType="com.dao.pojo.Bm">
+            <id column="id" property="id"></id>
+            <result column="branch" property="branch"></result>
+        </association>
+    </resultMap>
+<select id="Select_name" resultMap="mymap">
+
+    select em.id,em.name name,bm.branch branch,em.age age,em.gender gender,em.phone phone,em.addr addr
+           from employee em LEFT JOIN bm on em.bmid=bm.id where em.name like #{name}
+
+</select>
+
+<insert id="insert_emp">
+
+    insert into employee (name,bmid,gender,age,phone,addr) values (#{name},#{bmid},#{gender},#{age},#{phone},#{addr})
+
+</insert>
+</mapper>
