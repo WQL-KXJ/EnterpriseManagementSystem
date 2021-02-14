@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dao.mapper.Employee_and_Bm">
+
+    <resultMap id="mymap" type="com.dao.pojo.Employee_and_BMs">
+        <id property="id" column="id"></id>
+        <result column="name" property="name"></result>
+        <result column="age" property="age"></result>
+        <result column="gender" property="gender"></result>
+        <result column="phone" property="phone"></result>
+        <result column="addr" property="addr"></result>
+        <association property="bms" javaType="com.dao.pojo.Bm">
+            <id column="id" property="id"></id>
+            <result column="branch" property="branch"></result>
+        </association>
+    </resultMap>
+
+    <resultMap id="mymap_er" type="com.dao.pojo.Employee_and_BMs">
+        <id property="id" column="id"></id>
+        <result column="name" property="name"></result>
+        <result column="age" property="age"></result>
+        <result column="gender" property="gender"></result>
+        <result column="phone" property="phone"></result>
+        <result column="addr" property="addr"></result>
+        <association property="bms" javaType="com.dao.pojo.Bm">
+            <id column="id" property="id"></id>
+            <result column="branch" property="branch"></result>
+        </association>
+    </resultMap>
+
+
+    <select id="select_FQ" resultMap="mymap">
+
+     select em.id,em.name name,bm.branch branch,em.age age,em.gender gender,em.phone phone,em.addr addr
+           from employee em LEFT JOIN bm on em.bmid=bm.id
+
+    </select>
+
+
+    <select id="select_WQL" resultMap="mymap_er">
+
+     select em.id,em.name name,bm.branch branch,em.age age,em.gender gender,em.phone phone,em.addr addr
+           from employee em LEFT JOIN bm on em.bmid=bm.id where em.id=#{id}
+
+    </select>
+
+    <select id="select_bm" resultType="com.dao.pojo.Bm">
+
+      select * from bm
+
+    </select>
+
+    <update id="updata_FQ" >
+
+         update employee set name=#{name},bmid=#{bmid},gender=#{gender},age=#{age},phone=#{phone},addr=#{addr}
+         where id=#{id}
+
+
+    </update>
+
+
+    <delete id="delete_WQL">
+
+        delete from employee where id=#{id}
+
+    </delete>
+</mapper>

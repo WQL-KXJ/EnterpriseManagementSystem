@@ -1,0 +1,63 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="SSMXM:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/SSMXM_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="SSMXM/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="SSMXM" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: aopalliance:aopalliance:1.0" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.8.6" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.8.1" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.7.5" />
+          <element id="library" level="project" name="Maven: com.mchange:c3p0:0.9.5.1" />
+          <element id="library" level="project" name="Maven: com.mchange:mchange-commons-java:0.2.10" />
+          <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.2" />
+          <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
+          <element id="library" level="project" name="Maven: junit:junit:4.12" />
+          <element id="library" level="project" name="Maven: log4j:log4j:1.2.17" />
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.41" />
+          <element id="library" level="project" name="Maven: org.aspectj:aspectjrt:1.8.13" />
+          <element id="library" level="project" name="Maven: org.aspectj:aspectjweaver:1.8.13" />
+          <element id="library" level="project" name="Maven: org.hamcrest:hamcrest-core:1.3" />
+          <element id="library" level="project" name="Maven: org.mybatis:mybatis-spring:1.3.1" />
+          <element id="library" level="project" name="Maven: org.mybatis:mybatis:3.4.2" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aop:4.3.7.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aspects:4.3.7.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-beans:4.3.7.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context:4.3.7.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-core:4.3.7.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-expression:4.3.7.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:4.3.7.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-test:4.3.7.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-tx:4.3.7.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-web:4.3.7.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:4.3.7.RELEASE" />
+          <element id="library" level="project" name="Maven: taglibs:standard:1.1.2" />
+          <element id="library" level="project" name="Maven: cglib:cglib-nodep:2.2.2" />
+          <element id="library" level="project" name="Maven: org.mybatis.generator:mybatis-generator-maven-plugin:1.3.6" />
+          <element id="library" level="project" name="Maven: org.apache.maven:maven-plugin-api:3.5.0" />
+          <element id="library" level="project" name="Maven: org.apache.maven:maven-model:3.5.0" />
+          <element id="library" level="project" name="Maven: org.codehaus.plexus:plexus-utils:3.0.24" />
+          <element id="library" level="project" name="Maven: org.apache.commons:commons-lang3:3.5" />
+          <element id="library" level="project" name="Maven: org.apache.maven:maven-artifact:3.5.0" />
+          <element id="library" level="project" name="Maven: org.eclipse.sisu:org.eclipse.sisu.plexus:0.3.3" />
+          <element id="library" level="project" name="Maven: javax.enterprise:cdi-api:1.0" />
+          <element id="library" level="project" name="Maven: javax.annotation:jsr250-api:1.0" />
+          <element id="library" level="project" name="Maven: javax.inject:javax.inject:1" />
+          <element id="library" level="project" name="Maven: org.eclipse.sisu:org.eclipse.sisu.inject:0.3.3" />
+          <element id="library" level="project" name="Maven: org.codehaus.plexus:plexus-component-annotations:1.5.5" />
+          <element id="library" level="project" name="Maven: org.codehaus.plexus:plexus-classworlds:2.5.2" />
+          <element id="library" level="project" name="Maven: org.mybatis.generator:mybatis-generator-core:1.3.6" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.7.4" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.7.4" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.7.4" />
+          <element id="library" level="project" name="Maven: com.github.pagehelper:pagehelper:5.2.0" />
+          <element id="library" level="project" name="Maven: com.github.jsqlparser:jsqlparser:3.2" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
